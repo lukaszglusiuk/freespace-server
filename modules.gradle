@@ -1,0 +1,10 @@
+
+
+ext.modules = [  
+  testNg:                module('org.testng', 'testng', '6.7'),
+  log4j:                 module('log4j', 'log4j', '1.2.17'),
+]
+
+def module(String groupId, String artifactId, String version){
+  [group: groupId, name: artifactId, version: version];
+}

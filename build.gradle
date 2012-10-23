@@ -1,3 +1,11 @@
+apply from: 'repositories.gradle'
+apply from: 'modules.gradle'
+
+apply plugin: 'scala'
+
+def extVersion = '0.0.1-SNAPSHOT'
+
 allprojects {
-    task hello << {task -> println "Building $task.project.name" }
+	it.group = 'com.lgsoft.freespace-server'
+	it.version = extVersion 
 }
