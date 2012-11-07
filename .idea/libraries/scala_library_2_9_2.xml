@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="scala-library-2.9.2">
+    <CLASSES>
+      <root url="file://C:/tools/scala/lib" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://C:/tools/scala/doc" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://C:/tools/scala/lib" recursive="false" />
+  </library>
+</component>

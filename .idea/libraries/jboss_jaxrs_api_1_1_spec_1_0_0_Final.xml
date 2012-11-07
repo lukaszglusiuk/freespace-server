@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jboss-jaxrs-api_1.1_spec-1.0.0.Final">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_1.1_spec/1.0.0.Final/jar/463018df51d03fae28cf5986810d0fadb3c5ab0f/jboss-jaxrs-api_1.1_spec-1.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_1.1_spec/1.0.0.Final/source/11db4fe9ff9f2b1d55d36f088917c0854a445328/jboss-jaxrs-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

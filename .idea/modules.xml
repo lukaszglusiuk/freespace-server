@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/freespace-server.iml" filepath="$PROJECT_DIR$/freespace-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/freespace-server-main.iml" filepath="$PROJECT_DIR$/freespace-server-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freespace-server-module.iml" filepath="$PROJECT_DIR$/freespace-server-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freespace-server-service.iml" filepath="$PROJECT_DIR$/freespace-server-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freespace-server-web.iml" filepath="$PROJECT_DIR$/freespace-server-web.iml" />
     </modules>
   </component>
 </project>

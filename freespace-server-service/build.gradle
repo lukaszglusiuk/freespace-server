@@ -1,0 +1,16 @@
+apply from: '../repositories.gradle'
+apply from: '../modules.gradle'
+
+apply plugin: 'scala'
+
+
+dependencies {
+    // Libraries needed to run the scala tools
+    scalaTools modules.scalaCompiler
+    scalaTools modules.scalaLibrary
+
+    // Libraries needed for scala api
+    compile modules.scalaLibrary
+}
+
+println "Building $project.name" 

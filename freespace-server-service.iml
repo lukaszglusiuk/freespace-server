@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="scala" name="Scala">
+      <configuration>
+        <option name="compilerLibraryLevel" value="Project" />
+        <option name="compilerLibraryName" value="scala-library-2.9.2" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/freespace-server-service">
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-service/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/freespace-server-service/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/freespace-server-service/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="scala-library-2.9.2" level="project" />
+  </component>
+</module>
+

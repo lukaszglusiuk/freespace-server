@@ -1,0 +1,23 @@
+apply from: '../repositories.gradle'
+apply from: '../modules.gradle'
+
+apply plugin: 'scala'
+apply plugin: 'war'
+
+
+jar.enabled = false
+
+dependencies {
+    // Libraries needed to run the scala tools
+    scalaTools modules.scalaCompiler
+    scalaTools modules.scalaLibrary
+	
+    // Libraries needed for scala api
+    compile modules.scalaLibrary
+	
+	// Other dependencies
+	compile modules.javaxservlet
+	compile modules.javaxrs
+}
+
+println "Building $project.name" 

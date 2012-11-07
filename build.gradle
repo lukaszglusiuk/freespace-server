@@ -1,11 +1,47 @@
 apply from: 'repositories.gradle'
 apply from: 'modules.gradle'
 
-apply plugin: 'scala'
+apply plugin: 'java'
+apply plugin: 'ear'
+apply plugin: 'idea'
 
 def extVersion = '0.0.1-SNAPSHOT'
 
 allprojects {
 	it.group = 'com.lgsoft.freespace-server'
 	it.version = extVersion 
+}
+
+dependencies {
+	deploy project(path: ':freespace-server-web', configuration: 'archives')
+	deploy project(':freespace-server-service')
+    deploy project(':freespace-server-module')
+
+    //following dependencies will become ear libs and placed in a dir configured via libDirName property
+    earlib modules.log4j
+}
+
+ear {
+    appDirName 'src/main/app'  // use application metadata found in this folder
+    libDirName 'APP-INF/lib'  // put dependency libraries into APP-INF/lib inside the generated EAR;
+                                // also modify the generated deployment descriptor accordingly
+    deploymentDescriptor {  // custom entries for application.xml:
+//      fileName = "application.xml"  // same as the default value
+//      version = "6"  // same as the default value
+        applicationName = "fresspace-server"
+        initializeInOrder = true
+        displayName = "Freespace server"  // defaults to project.name
+        description = "Freespace server"  // defaults to project.description
+//      libraryDirectory = "APP-INF/lib"  // not needed, because setting libDirName above did this for us
+//      module("my.jar", "java")  // wouldn't deploy since my.jar isn't a deploy dependency
+		webModule('freespace-server-web-' + extVersion + ".war", 'freespace')  // wouldn't deploy since my.war isn't a deploy dependency
+        //withXml { provider -> // add a custom node to the XML
+       //     provider.asNode().appendNode("data-source", "my/data/source")
+       // }
+    }
+}
+
+task deploy(type: Copy){
+	from 'build/libs/'
+    into 'c:/tools/jboss-as-7.1.1.Final/standalone/deployments/'
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="scala" name="Scala">
+      <configuration>
+        <option name="compilerLibraryLevel" value="Project" />
+        <option name="compilerLibraryName" value="scala-library-2.9.2" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/freespace-server-web">
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/freespace-server-web/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/freespace-server-web/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/freespace-server-web/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="jboss-jaxrs-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="scala-library-2.9.2" level="project" />
+    <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
+  </component>
+</module>
+
